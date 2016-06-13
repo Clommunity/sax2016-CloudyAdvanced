@@ -10,8 +10,6 @@ gulp.task('server', function() {
         }
     });
 
-    gulp.watch("./css/main.sass", ['sass']);
-    gulp.watch("./js/main.js").on('change', bs.reload);
     gulp.watch("./index.html").on("change", bs.reload);
 });
 
