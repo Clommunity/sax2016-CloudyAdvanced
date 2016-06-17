@@ -71,11 +71,11 @@
 							<span class="fragment">
 								<p>
 									<div style="float: left"><img src="images/docker-single.png"/></div>
-									Docker és una eina que ens automatitza el desplagament d'aplicacions dintre de contenidors.
+									Docker és una eina que ens automatitza el desplegament d'aplicacions dintre de contenidors.
 									<ul>
 									   <span class="fragment"><li>Facilitat la instal·lació i configuració de nous serveis.</li></span>
-									   <span class="fragment"><li>Proporciona una capa d'abstracció adicional.</li></span>
-										 <span class="fragment"><li>Existencia de gran cantitat de contenedors 'precreats'. <i>"100,000+ free apps, public and private registries"</i></li></span>
+									   <span class="fragment"><li>Proporciona una capa d'abstracció addicional.</li></span>
+										 <span class="fragment"><li>Existència de gran quantitat de contenedors 'pre-creats' <i>"100,000+ free apps, public and private registries"</i></li></span>
 								  </ul>
 								</p>
 							</span>
@@ -145,9 +145,9 @@
 								<ul>
 									 <span><li>Instal·lar/Desinstal·lar Containers</li></span>
 									 <span><li>Posar en marxa/Aturar Containers</li></span>
-									 <span><li>Publicar/Despublicar els serveis a la communitat</li></span>
+									 <span><li>Publicar/Despublicar els serveis a la comunitat</li></span>
 									 <span><li>Veure el servei</li></span>
-									 <span><li>Editar els parametres del Container</li></span>
+									 <span><li>Editar els paràmetres del Container</li></span>
 									 <span><li>Esborrar el Container</li></span>
 								</ul>
 							</div>
@@ -162,13 +162,23 @@
 	          <div class="kreator-slide-content">
 							<div>
 								<span style="font-size: 4rem;">Com es publiquen els serveis creats amb Docker ?</span>
-								<span class="fragment">
-									<p>
-										<div style="float: left"><img width="50%" src="images/gossip-serf.png"/></div>
-										Cloudy publica internament...
-	                    <ul>
-									    </ul>
-									</p>
+									<span class="fragment">
+										<ul>
+											<li>
+												Cloudy publica els serveis utilitzant un protocol "gossip" (xafarderies).
+											</li>
+											<li class="fragment">
+											 	Aquesta característica ens ajuda a publicitar i cercar serveis a altres servidors dintre la xarxa.
+											</li>
+											<li class="fragment">
+												... i per tant necessitàvem que els containers <i>docker</i> facin servir el mateix sistema.
+											</li>
+										</ul>
+										<span class="fragment">
+											<div style="float: left"><img width="50%" src="images/gossip-serf.png"/></div>
+											<div><a href="https://www.serfdom.io/">serfdom.io</a></div>
+										</span>
+									</span>
 								</span>
 							</div>
 						</div>
@@ -176,7 +186,7 @@
 					<section style="display: block;" class="" contenteditable="false">
 						<div class="kreator-slide-content">
 							<div style="text-align: center;">
-								<span style="font-size: 4rem;"></span>
+								<span style="font-size: 4rem;">Cerca de serveis a cloudy</span>
 								<p>
 									<img src="images/serf-docker.png" width="80%">
 								</p>
@@ -190,14 +200,25 @@
 						<div>
 							<span style="font-size: 4rem;">Qui pot crear nous serveis ?</span>
 						</div>
+						<div class="fragment" style="padding-top: 30px;">
+							<div>
+								<i>Qualsevol persona</i>
+								<span class="fragment">... no necessita ser programador!!</span>
+							</div>
+						</div>
 					</div>
         </section>
 
 				<section style="display: block;" class="future" contenteditable="false" hidden="">
           <div class="kreator-slide-content">
 						<div>
-							<span style="font-size: 4rem;">Per què ho hauria de fer?</span>
-
+							<span style="font-size: 4rem;">No sóc programador! Com faig un servei?</span>
+						</div>
+						<div class="fragment" style="padding-top: 30px;">
+							<ul>
+								<li class="fragment">Cercar un container docker. <i><a href="https://hub.docker.com/">Hub de Docker</a></i>.</li>
+								<li class="fragment">O crear un container amb un <i><a href="">dockerfile</a></i>.
+							</ul>
 						</div>
 					</div>
         </section>
