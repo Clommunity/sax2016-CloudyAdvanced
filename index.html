@@ -75,7 +75,7 @@
 									<ul>
 									   <span class="fragment"><li>Facilitat la instal·lació i configuració de nous serveis.</li></span>
 									   <span class="fragment"><li>Proporciona una capa d'abstracció adicional.</li></span>
-										 <span class="fragment"><li>Gran cantitat de contenedors ja creats. <i>"100,000+ free apps, public and private registries"</i></li></span>
+										 <span class="fragment"><li>Existencia de gran cantitat de contenedors 'precreats'. <i>"100,000+ free apps, public and private registries"</i></li></span>
 								  </ul>
 								</p>
 							</span>
@@ -90,7 +90,10 @@
 							<div style="text-align: center;">
 								<span style="font-size: 4rem;">Com començar ?</span>
 								<p>
-									Fer un update
+									<i>&lt;web_interface&gt; System/Updates -> Update in cDistro</i>
+									<span style="text-align: center">
+										<img width="90%" src="images/cloudy-update.png" alt="Cloudy Update" border=0/>
+									</span>
 								</p>
 							</div>
 						</div>
@@ -98,14 +101,29 @@
 					<section style="display: block;" class="" contenteditable="false">
 	        	<div class="kreator-slide-content">
 							<div style="text-align: center;">
-								<span style="font-size: 4rem;"></span>
+								<span style="font-size: 4rem;">Fer un install a "Docker.io" -&gt; Installed</span>
 								<p>
-									Fer un install a "Docker.io"
+									<i></i>
+									<span style="text-align: center">
+										<img width="90%" src="images/cloudy-install.png" alt="Cloudy Update" border=0/>
+									</span>
 								</p>
 							</div>
 						</div>
 					</section>
-
+					<section style="display: block;" class="" contenteditable="false">
+	        	<div class="kreator-slide-content">
+							<div style="text-align: center;">
+								<span style="font-size: 4rem;">That's all, folks!</span>
+								<p>
+									<i></i>
+									<span style="text-align: center">
+										<img width="90%" src="images/cloudy-docker-installed.png" alt="Cloudy Update" border=0/>
+									</span>
+								</p>
+							</div>
+						</div>
+					</section>
       	</section>
 
 
@@ -305,7 +323,7 @@
 
 			// If we're runnning the notes server we need to include some additional JS
 			// TODO Is there a better way to determine if we're running the notes server?
-			if( window.location.host === 'localhost:1947' ) {
+			if( window.location.host === 'localhost:3000' ) {
 				head.js( 'socket.io/socket.io.js', 'plugin/speakernotes/client.js' );
 			}
 		</script>
